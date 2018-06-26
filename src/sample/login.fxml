@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.loginController">
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <Pane prefHeight="797.0" prefWidth="564.0">
+               <children>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" height="797.0" stroke="WHITE" strokeLineJoin="ROUND" strokeType="INSIDE" width="564.0">
+                     <fill>
+                        <LinearGradient endX="1.0" endY="1.0">
+                           <stops>
+                              <Stop color="#ff00cc" />
+                              <Stop color="#333399" offset="1.0" />
+                           </stops>
+                        </LinearGradient>
+                     </fill>
+                  </Rectangle>
+                  <TextField fx:id="username" layoutX="170.0" layoutY="379.0" promptText="Username" />
+                  <Label layoutX="232.0" layoutY="117.0" text="Login:" textFill="WHITE">
+                     <font>
+                        <Font name="MyriadPro-Regular" size="39.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="loginBtn" layoutX="247.0" layoutY="433.0" mnemonicParsing="false" onAction="#login" text="Login" />
+               </children>
+            </Pane>
+         </children>
+      </AnchorPane>
+   </children>
+</GridPane>
